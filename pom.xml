@@ -152,7 +152,7 @@
         <repository>
             <id>bintray-halodirobotics-maven-release</id>
             <name>halodirobotics-maven-release</name>
-            <url>https://api.bintray.com/maven/halodirobotics/maven-release/jamod/;publish=1</url>
+            <url>https://api.bintray.com/maven/halodirobotics/maven-release/jamod</url>
         </repository>
     </distributionManagement>
 
