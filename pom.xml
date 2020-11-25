@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>net.wimpi</groupId>
+    <groupId>com.halodi</groupId>
     <artifactId>jamod</artifactId>
     <packaging>jar</packaging>
-    <version>1.2.3-SNAPSHOT</version>
+    <version>1.2.3-halodi1</version>
     <name>jamod</name>
-    <url>http://jamod.sourceforge.net</url>
+    <url>https://github.com/halodi/jamod</url>
     <description>
         jamod is an object oriented implementation of the Modbus protocol, realized 100% in Java. It allows to quickly
         realize master and slave applications in various transport flavors (IP and serial).
@@ -26,9 +26,9 @@
         <serial.package>gnu.io</serial.package>
 
         <!-- RXTX gnu.io -->
-        <serial.package.gid>org.rxtx</serial.package.gid>
-        <serial.package.aid>rxtx</serial.package.aid>
-        <serial.package.version>2.1.7</serial.package.version>
+        <serial.package.gid>com.neuronrobotics</serial.package.gid>
+        <serial.package.aid>nrjavaserial</serial.package.aid>
+        <serial.package.version>5.1.1</serial.package.version>
 
         <!-- Reference Implementation, needs manual install
         <serial.package.gid>javax.comm</serial.package.gid>
@@ -65,6 +65,14 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
                 <version>2.1.2</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -141,10 +149,11 @@
     </build>
 
     <distributionManagement>
-        <site>
-            <id>jamod.sf.net</id>
-            <url>scp://web.sourceforge.net/home/groups/j/ja/jamod/htdocs</url>
-        </site>
+        <repository>
+            <id>bintray-halodirobotics-maven-release</id>
+            <name>halodirobotics-maven-release</name>
+            <url>https://api.bintray.com/maven/halodirobotics/maven-release/jamod/;publish=1</url>
+        </repository>
     </distributionManagement>
 
     <reporting>
