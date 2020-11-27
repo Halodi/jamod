@@ -4,7 +4,7 @@
     <groupId>com.halodi</groupId>
     <artifactId>jamod</artifactId>
     <packaging>jar</packaging>
-    <version>1.2.3-halodi1</version>
+    <version>1.2.3-halodi2</version>
     <name>jamod</name>
     <url>https://github.com/halodi/jamod</url>
     <description>
@@ -28,7 +28,7 @@
         <!-- RXTX gnu.io -->
         <serial.package.gid>com.neuronrobotics</serial.package.gid>
         <serial.package.aid>nrjavaserial</serial.package.aid>
-        <serial.package.version>5.1.1</serial.package.version>
+        <serial.package.version>3.15.0</serial.package.version>
 
         <!-- Reference Implementation, needs manual install
         <serial.package.gid>javax.comm</serial.package.gid>
