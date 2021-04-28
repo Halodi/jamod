@@ -150,9 +150,9 @@
 
     <distributionManagement>
         <repository>
-            <id>bintray-halodirobotics-maven-release</id>
+            <id>nexus-halodirobotics-maven-release</id>
             <name>halodirobotics-maven-release</name>
-            <url>https://api.bintray.com/maven/halodirobotics/maven-release/jamod</url>
+            <url>https://artifacts.halodi.com/repository/maven-open-source-production</url>
         </repository>
     </distributionManagement>
 
